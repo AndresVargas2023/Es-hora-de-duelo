@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo de Cartas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="card-unit" id="redCard" onclick="target('redCard')">
+            <div class="header">
+                <h3>Ninja Cinturón Rojo</h3>
+                <img src="https://img2.freepng.es/20180131/ouq/kisspng-diamond-clip-art-diamond-vector-clip-art-png-5a7270d5b308c2.2600617015174494297333.jpg" alt="cost" >
+                <p class="cost">3</p>
+            </div>
+            <img src="./images/ninjared.webp" alt="Ninja Cinturón Rojo" id="ninjared">
+            <div class="powres">
+                <img src="./images/poder.png" alt="Power Icon">                
+                <p>3 Poder</p>
+            </div>
+            <div class="powres">
+                <img src="./images/resistencia.png" alt="Resilience Icon">     
+                <p id="resistenciared">4 Resistencia</p>
+            </div>
+        </div>
+        <div class="card-unit" id="blackCard" onclick="target('blackCard')">
+            <div class="header">
+                <h3>Ninja Cinturón Negro</h3>
+                <img src="https://img2.freepng.es/20180131/ouq/kisspng-diamond-clip-art-diamond-vector-clip-art-png-5a7270d5b308c2.2600617015174494297333.jpg" alt="cost">
+                <p class="cost">4</p>
+            </div>
+            <img src="./images/ninjablack.jpg" alt="Ninja Cinturón Negro" id="ninjablack">
+            <div class="powres">
+                <img src="./images/poder.png" alt="Power Icon">                
+                <p>5 Poder</p>
+            </div>
+            <div class="powres">
+                <img src="./images/resistencia.png" alt="Resilience Icon">     
+                <p id="resistenciablack">4 Resistencia</p>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="card-effect" id="algoritmo-dificil-card" onclick="target('algoritmo-dificil-card')">
+            <div class="header">   
+                <h3>Algoritmo Difícil</h3>
+                <img src="https://img2.freepng.es/20180131/ouq/kisspng-diamond-clip-art-diamond-vector-clip-art-png-5a7270d5b308c2.2600617015174494297333.jpg" alt="cost" >
+                <p class="cost">2</p>
+            </div>
+            <img src="./images/AlgoritmoDifícil.jpg" alt="AlgoritmoDifícil" id="AlgoritmoDifícil">
+            <div>
+                <p class="effect-text"><img src="./images/resistencia.png" alt="resistencia"> + 3 </p>
+            </div>
+        </div>
+        <div class="card-effect" id="algoritmo-no-manejado" onclick="target('algoritmo-no-manejado')">
+            <div class="header">   
+                <h3>Rechazo de promesa no manejado</h3>
+                <img src="https://img2.freepng.es/20180131/ouq/kisspng-diamond-clip-art-diamond-vector-clip-art-png-5a7270d5b308c2.2600617015174494297333.jpg" alt="cost" >
+                <p class="cost">1</p>
+            </div>
+            <img src="./images/promesaNoManejado.jfif" alt="promesaNoManejado" id="promesaNoManejado">
+            <div>
+                <p class="effect-text"><img src="./images/resistencia.png" alt="resistencia"> - 2 </p>
+            </div>
+        </div>
+        <div class="card-effect" id="programacion-en-pareja" onclick="target('programacion-en-pareja')">
+            <div class="header">   
+                <h3>Programación en pareja</h3>
+                <img src="https://img2.freepng.es/20180131/ouq/kisspng-diamond-clip-art-diamond-vector-clip-art-png-5a7270d5b308c2.2600617015174494297333.jpg" alt="cost" >
+                <p class="cost">3</p>
+            </div>
+            <img src="./images/programaciónPareja.webp" alt="programaciónPareja" id="programaciónPareja">
+            <div>
+                <p class="effect-text"><img src="./images/resistencia.png" alt="resistencia"> + 2 </p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
